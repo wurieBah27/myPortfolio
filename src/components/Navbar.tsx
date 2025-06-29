@@ -10,7 +10,7 @@ import { HiMiniChatBubbleLeftEllipsis } from "react-icons/hi2";
 /* framer motion */
 import { motion } from "framer-motion";
 
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -20,7 +20,7 @@ const NavBar = () => {
       transition={{ duration: 1.5, ease: "easeInOut" }}
     >
       <Navbar fluid rounded className="mx-auto max-w-[96rem]">
-        <NavbarBrand href="https://flowbite-react.com">
+        <NavbarBrand href="/">
           <img
             src="/logo.png"
             className="mr-3 h-6 sm:h-9"
@@ -31,10 +31,12 @@ const NavBar = () => {
           </span>
         </NavbarBrand>
         <div className="flex gap-2 md:order-2">
-          <Button color="yellow" outline className="flex items-center gap-3">
-            <span>Let's talk</span>
-            <HiMiniChatBubbleLeftEllipsis />
-          </Button>
+          <Link to={"https://wa.me/message/7MOAKV5Y5G2LO1"} target="_blank">
+            <Button color="yellow" outline className="flex items-center gap-3">
+              <span>Let's talk</span>
+              <HiMiniChatBubbleLeftEllipsis />
+            </Button>
+          </Link>
           <NavbarToggle />
         </div>
         <NavbarCollapse className="z-[200]">

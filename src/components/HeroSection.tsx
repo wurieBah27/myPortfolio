@@ -4,6 +4,7 @@ import { HiBriefcase, HiMiniChatBubbleLeftEllipsis } from "react-icons/hi2";
 import { motion } from "framer-motion";
 
 import SocialMediaLinks from "./SocialMediaLinks";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -106,10 +107,16 @@ const HeroSection = () => {
             >
               <div>
                 <div className="my-4 flex items-center gap-5">
-                  <Button color={"dark"} className="flex items-center gap-3">
-                    <span className="font-bold">Let's talk</span>
-                    <HiMiniChatBubbleLeftEllipsis />
-                  </Button>
+                  <Link
+                    to={"https://wa.me/message/7MOAKV5Y5G2LO1"}
+                    target="_blank"
+                  >
+                    <Button color={"dark"} className="flex items-center gap-3">
+                      <span className="font-bold">Let's talk</span>
+                      <HiMiniChatBubbleLeftEllipsis />
+                    </Button>
+                  </Link>
+
                   <Button
                     color={"dark"}
                     outline
