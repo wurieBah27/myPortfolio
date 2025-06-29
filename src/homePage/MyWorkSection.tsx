@@ -28,7 +28,8 @@ const MyWorkSection = () => {
           <div>
             <div className="nexter_gallery mt-10 min-[500px]:grid">
               <Link
-                to={"/all-projects/1"}
+                to={"https://bah-cafe.vercel.app/"}
+                target="_blank"
                 className="nexter_gallery__item-1 overflow-hidden bg-gray-200 shadow-md"
               >
                 <PortfolioCard
@@ -39,7 +40,8 @@ const MyWorkSection = () => {
               </Link>
 
               <Link
-                to={"/all-projects/2"}
+                to={"https://bah-cafe.vercel.app/"}
+                target="_blank"
                 className="nexter_gallery__item-2 overflow-hidden bg-gray-200 shadow-md"
               >
                 <PortfolioCard
